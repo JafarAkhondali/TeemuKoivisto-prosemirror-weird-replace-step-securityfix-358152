@@ -4,6 +4,7 @@
     "example"
   ],
   "scripts": {
+    "deploy": "cd example && yarn deploy",
     "start": "cd example && yarn start"
   }
 }
