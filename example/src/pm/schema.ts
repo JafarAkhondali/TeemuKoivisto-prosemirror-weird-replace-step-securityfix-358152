@@ -313,15 +313,20 @@ export const schema: ExampleSchema = new Schema<Nodes, Marks>({
     // :: MarkSpec An emphasis mark. Rendered as an `<em>` element.
     // Has parse rules that also match `<i>` and `font-style: italic`.
     italic: {
+      attrs: { color: { default: null } },
       parseDOM: [{ tag: 'i' }, { tag: 'em' }, { style: 'font-style=italic' }],
-      toDOM() {
-        return ['em', 0]
+      toDOM(el) {
+        const attrs = {
+          style: `background: ${el.attrs.color};`
+        }
+        return ['em', attrs, 0]
       },
     },
 
     // :: MarkSpec A strong mark. Rendered as `<strong>`, parse rules
     // also match `<b>` and `font-weight: bold`.
     bold: {
+      attrs: { color: { default: null } },
       parseDOM: [
         { tag: 'strong' },
         // This works around a Google Docs misbehavior where
@@ -342,8 +347,11 @@ export const schema: ExampleSchema = new Schema<Nodes, Marks>({
           },
         },
       ],
-      toDOM() {
-        return ['strong', 0]
+      toDOM(el) {
+        const attrs = {
+          style: `background: ${el.attrs.color};`
+        }
+        return ['strong', attrs, 0]
       },
     },
 

@@ -1,6 +1,6 @@
 # [prosemirror-weird-replace-step](https://teemukoivisto.github.io/prosemirror-weird-replace-step/)
 
-When I replace the `'<i>p</i>o'` text with a character, say `'m'`, it produces a quite convoluted ReplaceStep which is correct but quite problematic for inverting it and reapplying it with track attributes.
+When I replace `'<i>p</i>o'` text with a character, say `'m'`, it produces a quite convoluted ReplaceStep which, for some reason, defaults all marks's attributes to their default values.
 
 ## To reproduce
 
@@ -13,14 +13,21 @@ When I replace the `'<i>p</i>o'` text with a character, say `'m'`, it produces a
 {
   "stepType": "replace",
   "from": 5,
-  "to": 31,
+  "to": 38,
   "slice": {
     "content": [
       {
         "type": "text",
+        "text": "m"
+      },
+      {
+        "type": "text",
         "marks": [
           {
-            "type": "italic"
+            "type": "italic",
+            "attrs": {
+              "color": null
+            }
           }
         ],
         "text": "l"
@@ -33,7 +40,10 @@ When I replace the `'<i>p</i>o'` text with a character, say `'m'`, it produces a
         "type": "text",
         "marks": [
           {
-            "type": "bold"
+            "type": "bold",
+            "attrs": {
+              "color": null
+            }
           }
         ],
         "text": "o"
@@ -46,7 +56,10 @@ When I replace the `'<i>p</i>o'` text with a character, say `'m'`, it produces a
         "type": "text",
         "marks": [
           {
-            "type": "bold"
+            "type": "bold",
+            "attrs": {
+              "color": null
+            }
           }
         ],
         "text": "o"
@@ -55,7 +68,10 @@ When I replace the `'<i>p</i>o'` text with a character, say `'m'`, it produces a
         "type": "text",
         "marks": [
           {
-            "type": "italic"
+            "type": "italic",
+            "attrs": {
+              "color": null
+            }
           }
         ],
         "text": "mm"
@@ -68,7 +84,10 @@ When I replace the `'<i>p</i>o'` text with a character, say `'m'`, it produces a
         "type": "text",
         "marks": [
           {
-            "type": "bold"
+            "type": "bold",
+            "attrs": {
+              "color": null
+            }
           }
         ],
         "text": "ooo"
@@ -81,7 +100,10 @@ When I replace the `'<i>p</i>o'` text with a character, say `'m'`, it produces a
         "type": "text",
         "marks": [
           {
-            "type": "bold"
+            "type": "bold",
+            "attrs": {
+              "color": null
+            }
           }
         ],
         "text": "o"
@@ -90,10 +112,29 @@ When I replace the `'<i>p</i>o'` text with a character, say `'m'`, it produces a
         "type": "text",
         "marks": [
           {
-            "type": "italic"
+            "type": "italic",
+            "attrs": {
+              "color": null
+            }
           }
         ],
-        "text": "c"
+        "text": "cb"
+      },
+      {
+        "type": "text",
+        "text": "ooo"
+      },
+      {
+        "type": "text",
+        "marks": [
+          {
+            "type": "italic",
+            "attrs": {
+              "color": null
+            }
+          }
+        ],
+        "text": "ocb"
       }
     ]
   }

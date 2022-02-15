@@ -12,7 +12,10 @@
           "type": "text",
           "marks": [
             {
-              "type": "italic"
+              "type": "italic",
+              "attrs": {
+                "color": "greenyellow"
+              }
             }
           ],
           "text": "p"
@@ -25,7 +28,10 @@
           "type": "text",
           "marks": [
             {
-              "type": "italic"
+              "type": "italic",
+              "attrs": {
+                "color": "greenyellow"
+              }
             }
           ],
           "text": "l"
@@ -51,7 +57,10 @@
           "type": "text",
           "marks": [
             {
-              "type": "bold"
+              "type": "bold",
+              "attrs": {
+                "color": "#ffa4a4"
+              }
             }
           ],
           "text": "o"
@@ -60,7 +69,10 @@
           "type": "text",
           "marks": [
             {
-              "type": "italic"
+              "type": "italic",
+              "attrs": {
+                "color": "limegreen"
+              }
             }
           ],
           "text": "m"
@@ -69,7 +81,10 @@
           "type": "text",
           "marks": [
             {
-              "type": "italic"
+              "type": "italic",
+              "attrs": {
+                "color": "greenyellow"
+              }
             }
           ],
           "text": "m"
@@ -95,7 +110,10 @@
           "type": "text",
           "marks": [
             {
-              "type": "bold"
+              "type": "bold",
+              "attrs": {
+                "color": "#ffa4a4"
+              }
             }
           ],
           "text": "o"
@@ -104,7 +122,10 @@
           "type": "text",
           "marks": [
             {
-              "type": "italic"
+              "type": "italic",
+              "attrs": {
+                "color": "limegreen"
+              }
             }
           ],
           "text": "c"
@@ -113,7 +134,10 @@
           "type": "text",
           "marks": [
             {
-              "type": "italic"
+              "type": "italic",
+              "attrs": {
+                "color": "greenyellow"
+              }
             }
           ],
           "text": "b"
@@ -126,14 +150,37 @@
           "type": "text",
           "marks": [
             {
-              "type": "italic"
+              "type": "italic",
+              "attrs": {
+                "color": "limegreen"
+              }
             }
           ],
-          "text": "ocb"
+          "text": "o"
         },
         {
           "type": "text",
-          "text": "ooo"
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "color": "greenyellow"
+              }
+            }
+          ],
+          "text": "c"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "color": "springgreen"
+              }
+            }
+          ],
+          "text": "b"
         }
       ]
     }
