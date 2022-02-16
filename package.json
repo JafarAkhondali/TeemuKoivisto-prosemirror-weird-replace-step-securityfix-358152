@@ -1,10 +1,11 @@
 {
   "private": true,
   "workspaces": [
-    "example"
+    "*"
   ],
   "scripts": {
     "deploy": "cd example && yarn deploy",
+    "pm": "cd prosemirror-view && yarn build",
     "start": "cd example && yarn start"
   }
 }

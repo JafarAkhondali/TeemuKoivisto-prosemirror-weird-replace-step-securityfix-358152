@@ -143,5 +143,7 @@ When I replace `'<i>p</i>o'` text with a character, say `'m'`, it produces a qui
 
 ## How to install
 
+0. `git submodule update --init --recursive`
 1. `yarn`
-2. `yarn start`
+2. `yarn pm`
+3. `yarn start`

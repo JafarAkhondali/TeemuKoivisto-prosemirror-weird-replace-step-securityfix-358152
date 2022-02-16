@@ -1,0 +1,3 @@
+[submodule "prosemirror-view"]
+	path = prosemirror-view
+	url = https://github.com/TeemuKoivisto/prosemirror-view
