@@ -4,8 +4,10 @@
     "*"
   ],
   "scripts": {
-    "deploy": "cd example && yarn deploy",
+    "deploy": "git subtree push --prefix static origin gh-pages",
+    "deploy:react": "cd example && yarn deploy",
     "pm": "cd prosemirror-view && yarn build",
+    "serve": "node serve.js",
     "start": "cd example && yarn start"
   }
 }

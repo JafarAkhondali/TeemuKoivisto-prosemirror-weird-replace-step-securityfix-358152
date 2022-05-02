@@ -63,7 +63,10 @@
   import { EditorView } from "prosemirror-view";
   import { exampleSetup } from "prosemirror-example-setup";
 
-  const docJson = await fetch('./doc.json').then((res) => res.json())
+  let docJson
+  (async () => {
+    docJson = await fetch('./doc.json').then((res) => res.json())
+  })()
   // import "prosemirror-example-setup/style/style.css";
   // import "prosemirror-menu/style/menu.css";
 
