@@ -10,7 +10,7 @@ const http = require("http"),
 http.createServer(function(request, response) {
 
   const uri = url.parse(request.url).pathname
-  let filename = path.join(process.cwd(), 'example/public', uri)
+  let filename = path.join(process.cwd(), 'static', uri)
   
   fs.stat(filename, function(err,stats) {
     if (err) {
