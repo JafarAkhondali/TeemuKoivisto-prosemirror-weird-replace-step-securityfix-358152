@@ -4,6 +4,12 @@ When I replace `'<i>p</i>o'` text with a character, say `'m'`, it produces a qui
 
 ## To reproduce
 
+1. Go to https://teemukoivisto.github.io/prosemirror-weird-replace-step OR locally you can run `node serve.js` and go to http://localhost:4040/
+2. Follow the steps
+
+
+### Previous at https://github.com/TeemuKoivisto/prosemirror-weird-replace-step/tree/13c125a37430efcafce4dd6e8a304aa85df6a9c1
+
 1. Go to https://teemukoivisto.github.io/prosemirror-weird-replace-step
 2. Click 'Restore example'
 3. Select <code><i>p</i>o</code>, press <code>m</code>
